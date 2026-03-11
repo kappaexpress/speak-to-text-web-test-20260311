@@ -1,5 +1,5 @@
 {
-  "name": "speak-to-text-web-test-20260311",
+  "name": "devcontainers-YYYYMMDD",
   "build": {
     "dockerfile": "Dockerfile"
   },

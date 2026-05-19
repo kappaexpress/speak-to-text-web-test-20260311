@@ -5,13 +5,6 @@
   },
   "features": {
     // "ghcr.io/devcontainers/features/python:1": {}
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "anthropic.claude-code"
-      ]
-    }
-  },
-  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash"
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  }
 }

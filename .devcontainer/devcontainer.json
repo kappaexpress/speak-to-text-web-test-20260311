@@ -1,10 +1,14 @@
 {
-  "name": "devcontainers-YYYYMMDD",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "features": {
-    // "ghcr.io/devcontainers/features/python:1": {}
-    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
-  }
+	"name": "devcontainers-YYYYMMDD",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"anthropic.claude-code"
+			]
+		}
+	},
+	"postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash"
 }
